@@ -24,7 +24,7 @@ Pipes (|) to show start and end and seperate columns
 
 Dashes (-) to seperate the header, at least 3
 
-Header seperator defines the alignment:
+#### Header seperator defines the alignment:
 
 :---  means the column is left aligned.
 
