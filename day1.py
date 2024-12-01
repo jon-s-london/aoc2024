@@ -1,5 +1,7 @@
 # Day 1 of Advent of Code 2024
 
+import collections
+
 # Part 1
 # https://adventofcode.com/2024/day/1
 
@@ -38,8 +40,15 @@ part2Total = 0
 
 # loop through the lists
 # count of item in list B * item value in list A
-for i in range(len(listA)):
-    part2Total += listB.count(listA[i]) * listA[i]
+# for i in range(len(listA)):
+#     part2Total += listB.count(listA[i]) * listA[i]
 
-# print the total
+# # print the total
+# print('Total for Part 2:', part2Total)
+
+counted = collections.Counter(listB)
+
+for i in range(len(listA)):
+    part2Total += counted[listA[i]] * listA[i]
+
 print('Total for Part 2:', part2Total)
