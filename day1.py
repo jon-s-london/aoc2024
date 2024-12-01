@@ -34,6 +34,8 @@ print('Total for Part 1:', total)
 # setup a new total for the multiplication in part 2
 part2Total = 0
 
+# TODO: collections.counter is ideal for part 2 with a list comprehension
+
 # loop through the lists
 # count of item in list B * item value in list A
 for i in range(len(listA)):
