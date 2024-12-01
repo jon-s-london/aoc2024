@@ -11,3 +11,5 @@ https://adventofcode.com/2024/day/1
 | Day 2 | [ ]    | [ ]     |
 
 \u2714
+
+&#x2714;
