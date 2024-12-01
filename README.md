@@ -1,9 +1,8 @@
-# aoc2024
-Advent of Code 2024
+# AoC 2024 - Advent of Code 2024
 
-Link to Challenges:
+## Link to Challenges:
 https://adventofcode.com/2024/day/1
 
-Completion Record:
+## Completion Record:
 
 Day 1 - ?
