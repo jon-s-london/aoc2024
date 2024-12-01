@@ -15,6 +15,7 @@ https://adventofcode.com/2024/
 ### Ticks & Crosses
 
 &#x2714; - Tick
+
 &#x2718; - Cross
 
 ### Tables
