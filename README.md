@@ -5,11 +5,7 @@ https://adventofcode.com/2024/day/1
 
 ## Completion Record:
 
-| Day   | Part 1 | Part 2  |
-| ----- |:------:| :------:|
-| Day 1 | [x]    | [x]     |
-| Day 2 | [ ]    | [ ]     |
-
-\u2714
-
-&#x2714;
+| Day   | Part 1   |  Part 2  |
+| ----- |:--------:| :-------:|
+| Day 1 | &#x2714; | &#x2714; |
+| Day 2 | &#x2718; | &#x2718; |
