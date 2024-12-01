@@ -27,5 +27,7 @@ Dashes (-) to seperate the header, at least 3
 Header seperator defines the alignment:
 
 :---  means the column is left aligned.
+
 ---:  means the column is right aligned.
+
 :---: means the column is center aligned.
