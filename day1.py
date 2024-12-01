@@ -4,7 +4,7 @@
 # https://adventofcode.com/2024/day/1
 
 # get the data
-with open('1_1_input.txt', 'r') as f:
+with open('input_1.txt', 'r') as f:
     data = [line.split() for line in f]
 
 # create 2 lists for each set of data and a total for the sum
