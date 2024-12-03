@@ -17,7 +17,6 @@ def isThreeNumbers(data, i):
 
 def part1(data):
     sum = 0
-    count = 0
     for i in range(len(data[0]) - 8):
         if data[0][i:i+4] == 'mul(':
             firstNumberLength = isThreeNumbers(data, i)
@@ -28,8 +27,6 @@ def part1(data):
                         if data[0][i+4+firstNumberLength+1+secondNumberLength:i+4+firstNumberLength+1+secondNumberLength+1] ==')':
                             # do the calculation
                             sum += int(data[0][i+4:i+4+firstNumberLength]) * int(data[0][i+4+firstNumberLength+1:i+4+firstNumberLength+secondNumberLength+1])
-                            # print(sum)
-                            count += 1
     return sum
 
 
@@ -65,5 +62,3 @@ if __name__ == "__main__":
     print('First Part:', first)
     second = part2(data2)
     print('Second Part:', second)
-
-# mul(4,4) is 8 digits long
