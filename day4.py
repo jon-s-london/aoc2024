@@ -34,10 +34,29 @@ def xmas(data, length, depth):
     return count
 
 
+def searchForCrossMas(data, i, j, length, depth):
+    searchable = [(-1,-1), (1,1), (-1,1), (1,-1)]
+
+    if data[i-1][j-1] == 'M' and data[i-1][j+1] == 'M' and data[i+1][j+1] == 'S' and data[i+1][j-1] == 'S':
+        return 1
+    elif data[i-1][j-1] == 'S' and data[i-1][j+1] == 'S' and data[i+1][j+1] == 'M' and data[i+1][j-1] == 'M':
+        return 1
+    elif data[i-1][j-1] == 'S' and data[i+1][j-1] == 'S' and data[i-1][j+1] == 'M' and data[i+1][j+1] == 'M':
+        return 1
+    elif data[i-1][j-1] == 'M' and data[i+1][j-1] == 'M' and data[i-1][j+1] == 'S' and data[i+1][j+1] == 'S':
+        return 1
+    else:
+        return 0
+
+
 def crossMas(data, length, depth):
     count = 0
 
-
+    for i in range(1, depth):
+        for j in range(1, length - 2):
+            if data[i][j] == 'A':
+                count += searchForCrossMas(data, i, j, length, depth)
+    return count
 
 def main():
     data = getData()
