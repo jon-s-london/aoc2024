@@ -1,6 +1,6 @@
 # Day 1 of Advent of Code 2024
 
-import collections
+import collections # for part 2
 
 # Part 1
 # https://adventofcode.com/2024/day/1
@@ -35,16 +35,6 @@ print('Total for Part 1:', total)
 
 # setup a new total for the multiplication in part 2
 part2Total = 0
-
-# TODO: collections.counter is ideal for part 2 with a list comprehension
-
-# loop through the lists
-# count of item in list B * item value in list A
-# for i in range(len(listA)):
-#     part2Total += listB.count(listA[i]) * listA[i]
-
-# # print the total
-# print('Total for Part 2:', part2Total)
 
 counted = collections.Counter(listB)
 
