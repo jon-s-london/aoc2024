@@ -1,7 +1,5 @@
 # Day 9 of Advent of Code 2024
 
-import collections # for part 2
-
 def part1():
     # Part 1
     # https://adventofcode.com/2024/day/9
@@ -68,7 +66,8 @@ def part2():
     isWorking = True
 
     while isWorking:
-    count = 0
+        counter = 0
+        count = 0
 
         # traverse drive backwards
         for i in range(len(drive)-1, -1, -1):
@@ -82,13 +81,16 @@ def part2():
                         tempString = tempString + '.'
                         tempChars = drive[i] + tempChars
                     space = drive.index(tempString)
-                    driveTemp = drive[0:space] + tempChars + drive[space+len(tempString):i] + tempString + drive[len(tempString) + len(tempChars) + :]
+                    driveTemp = drive[0:space] + tempChars + drive[space+len(tempString):i] + tempString + drive[len(tempString) + len(tempChars):]
+                    drive = driveTemp
+                    count = 0
 
             else:
                 count = 0
-
-                drive[i] = '.'
-                break
+        
+        counter += 1
+        if counter > 100:
+            isWorking = False
 
 
 if __name__ == '__main__':
